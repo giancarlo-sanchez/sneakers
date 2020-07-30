@@ -1,12 +1,13 @@
 import { ADD_TO_CART_SUCCESS, REMOVE_FROM_CART, CART_SAVE_SHIPPING, CART_SAVE_PAYMENT } from "../constants/sneakerConstants";
 import axios from "axios";
 import Cookie from 'js-cookie';
+import { baseUrl } from '../config';
 
 
 
 const addCart = (sneakerId, size) => async(dispatch, getState) =>{
     try{
-        const {data} = await axios.get('/sneakers/'+ sneakerId);
+        const {data} = await axios.get(baseUrl+'/sneakers/'+ sneakerId);
         dispatch({type: ADD_TO_CART_SUCCESS, payload:{
             sneakerId: data.sneaker.id,
             name: data.sneaker.name,
