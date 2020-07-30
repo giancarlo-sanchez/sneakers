@@ -7,6 +7,7 @@ import {
 
 const createOrder = (order) => async (dispatch, getState) => {
   try {
+    console.log("This is sent to the order",order)
     dispatch({ type: ORDER_CREATE_REQUEST, payload: order });
     //const { userSignin: { userInfo } } = getState();
     const { data: { data: newOrder } } = await Axios.post(baseUrl+"/orders", order);

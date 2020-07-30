@@ -39,6 +39,7 @@ function PlaceOrderPage(props) {
 
 
   const itemsPrice = cartItems.reduce((a, c) => a + c.price, 0);
+  console.log("Este es el itemsPrice:",itemsPrice)
   const shippingPrice = itemsPrice > 100 ? 0 : 10;
   const taxPrice = 0.15 * itemsPrice;
   const totalPrice = itemsPrice + shippingPrice + taxPrice;
