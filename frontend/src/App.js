@@ -1,7 +1,7 @@
 import React from 'react';
 import {Component} from 'react'
 import './index.css';
-import { baseUrl } from '../config';
+import { baseUrl } from '../src/config';
 
 import { BrowserRouter, Route, Link, Redirect } from 'react-router-dom';
 import HomePage from './components/HomePage';
