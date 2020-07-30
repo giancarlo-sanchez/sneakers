@@ -13,7 +13,7 @@ function PlaceOrderPage(props) {
   console.log("this is orderCreate:",orderCreate);
   const { loading, success, error, order } = orderCreate;
   const {userInfo} = userSignin;
-  console.log("this is user info:",userInfo)
+  console.log("this is user info:",userInfo )
 
   let userId = userInfo.user.id;
 
