@@ -118,6 +118,10 @@ a:hover{
     margin: 0.2rem;
 }
 
+.sneaker a{
+    text-decoration: none;
+}
+
 .sneaker img{
     display: flex;
     justify-content: space-around;
@@ -190,7 +194,7 @@ a:hover{
 .sneaker-price{
     font-size: 2rem;
     color: gray;
-    font-weight: bold;
+    /* font-weight: bold; */
     display: flex;
     justify-content: space-around;
     background-color: rgb(51, 204, 255);
@@ -198,7 +202,12 @@ a:hover{
     color: white;
     font-family: 'Anton', sans-serif;
     font-size: 4rem;
+    transition: 0.7s;
     border-radius: 5.5rem;
+}
+
+.sneaker-price:hover{
+    background-color: orange;
 }
 
 /*Side bar section*/
@@ -217,10 +226,126 @@ a:hover{
     position: fixed;
     transition: all .5s;
     transform: translateX(-30rem);
-
-    width: 30rem;
-    background-color: darkolivegreen;
+    /* display: grid;
+    grid-template-areas: "close-button" "main-body-contact" "year";
+    grid-template-columns: auto;
+    grid-template-rows: 6rem 1fr 7rem;
     height: 100%;
+    width: 100%; */
+    /* justify-content: space-around; */
+    width: 30rem;
+    background-color: rgb(255, 51, 0);
+    height: 100%;
+    font-family: 'Anton', sans-serif;
+    padding: 2rem;
+}
+
+/* .sidebar_data>div{
+    border-bottom: 0.2rem solid gray;
+} */
+
+.sidebar__info-phone{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar__name{
+    font-family: 'Red Rose', cursive;
+    font-size: 3rem;
+}
+
+.sidebar__info-email{
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem;
+    text-decoration: none;
+    border-radius: 1.5rem;
+    background-color: rgb(0, 102, 153);
+}
+
+.sidebar__info-email a{
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+
+.sidebar__info-email:hover{
+    background-color: rgb(0, 204, 153);
+    color:white;
+    transition: 0.7s;
+
+}
+
+.sidebar__git-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(0, 102, 153);
+    text-align: center;
+    border-radius: 1.5rem;
+    align-items: center;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.sidebar__git-info:hover{
+    text-decoration: none;
+    background-color: rgb(0, 204, 153);
+    transition: 0.7s;
+}
+
+.sidebar__git-info img{
+  width: 10rem;
+  height: 10rem;
+
+}
+
+.close-button{
+    grid-area: 1/1/2/4;
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.main-body-contact{
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 4rem;
+    width: 15rem;
+    font-size: 2rem;
+
+}
+
+
+.sidebar div{
+    padding: 1rem;
+}
+
+
+.sidebar__title{
+    padding: 2rem;
+    font-size: 2rem;
+    background-color: white;
+    color: black;
+    border-radius: 2.5rem;
+}
+
+
+.sidebar__info{
+    padding: 2rem;
+    font-size: 2rem;
+    background-color: white;
+    color: black;
+    border-radius: 2.5rem;
 }
 
 .sidebar li{
@@ -240,17 +365,19 @@ a:hover{
 }
 
 .sidebar-close-button{
-    border-radius: 30%;
+    /* border-radius: ; */
     border: 0.1rem black solid;
-    color: black;
-    width: 6rem;
+    color: red;
+    width: 5rem;
     height: 3rem;
     padding: 0.5rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     cursor: pointer;
     position: absolute;
     right: 0.5rem;
     top: 1.5rem;
+    align-items: center;
 }
 
 /*Sneaker details*/

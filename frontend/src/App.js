@@ -53,37 +53,43 @@ function App(){
                 </div>
             </header>
             <aside className="sidebar">
-                <h3>Our Brands</h3>
-                <button className="sidebar-close-button"onClick={closeMenu}>close</button>
-                <ul>
-                    <li>
-                       <Link to="/brands/1">Adidas</Link>
-                    </li>
-                    <li>
-                       <Link to="/brands/2">Converse</Link>
-                    </li>
-                    <li>
-                       <Link to="/brands/3">New Balance</Link>
-                    </li>
-                    <li>
-                       <Link to="/brands/4">Nike</Link>
-                    </li>
-                    <li>
-                       <Link to="/brands/5">Reebok</Link>
-                    </li>
-                    <li>
-                       <Link to="/brands/6">Puma</Link>
-                    </li>
-                    <li>
-                       <Link to="/brands/7">Jordan</Link>
-                    </li>
-                    <li>
-                       <Link to="/brands/8">Vans</Link>
-                    </li>
-                    <li>
-                       <Link to="/brands/9">ASICS</Link>
-                    </li>
-                </ul>
+               <div className="sidebar_data">
+                  <div>
+                     <button className="sidebar-close-button"onClick={closeMenu}>close</button>
+                  </div>
+                  <div>
+                     <div className="main-body-contact">Developer Info</div>
+                  </div>
+                  <div className="sidebar__info">
+                     <div className="sidebar__name">GIANCARLO SANCHEZ</div>
+                     <a className="sidebar__info-email" href="https://www.linkedin.com/in/giancarlo-sanchez-6b28301aa/">giancarlo.sanchez.developer@gmail.com</a>
+                     <div className="sidebar__info-phone">
+                        <div>📱</div>
+                        <div>405 365 7708</div>
+                     </div>
+                     <div className="sidebar__info-phone">
+                        <div>🏙️</div>
+                        <div>Oklahoma City</div>
+                     </div>
+                     {/* <div>OKLAHOMA</div> */}
+                     <div className="sidebar__git-block">
+                        <a href="https://github.com/giancarlo-sanchez">
+                           <div className="sidebar__git-info">
+                              <img
+                                 alt="giancarlo"
+                                 src="https://avatars2.githubusercontent.com/u/60968129?s=460&u=40626fc20a0de43bd1d1fd02c3cb2549e97c4109&v=4"
+                                 className="footer__profile-pic"
+                              ></img>
+                              <div>GitHub repo</div>
+                           </div>
+                        </a>
+                     </div>
+
+
+
+                  </div>
+               </div>
+
             </aside>
 
             <main className="main">

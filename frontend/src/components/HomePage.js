@@ -30,7 +30,10 @@ return loading? <div>Loading...</div>:error? <div>{error}</div>:<div className="
                 <Link className="sneaker-brand" to={"/brands/"+sneaker.id}>
                     <div>{sneaker.Brand.name}</div>
                 </Link>
-                <div className="sneaker-price">$ {sneaker.price}</div>
+                <Link to={`/sneakers/${sneaker.id}`}>
+                    <div className="sneaker-price">$ {sneaker.price}</div>
+                </Link>
+
 
             </div>
 
