@@ -1,7 +1,7 @@
 import React from 'react';
 import {Component} from 'react'
 import './index.css';
-import { baseUrl } from '../config';
+import { baseUrl } from './config';
 
 import { BrowserRouter, Route, Link, Redirect } from 'react-router-dom';
 import HomePage from './components/HomePage';
@@ -40,7 +40,7 @@ function App(){
             <header className="header">
                 <div className="brand">
                     <button className="button-menu" onClick={openMenu}>&#9776;</button>
-                    <Link to="/">My Sneakers</Link>
+                    <Link to="/" className="header__title">My Sneakers</Link>
                 </div>
                 <div className="header-links">
                 <Link to={`/cart`}>
@@ -102,7 +102,16 @@ function App(){
               </div>
 
           </main>
-            <footer className="footer">This is my react Template footer</footer>
+            <footer className="footer">
+               <div>My Sneakers ©️</div>
+               <a href="https://github.com/giancarlo-sanchez">
+               <img
+                  alt="giancarlo"
+                  src="https://avatars2.githubusercontent.com/u/60968129?s=460&u=40626fc20a0de43bd1d1fd02c3cb2549e97c4109&v=4"
+                  className="footer__profile-pic"
+               ></img>
+               </a>
+            </footer>
       </div>
     </BrowserRouter>
   )

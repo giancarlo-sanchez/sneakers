@@ -14,7 +14,8 @@ function HomePage (props){
             dispatch(listSneakers())
     }, [])
 
-return loading? <div>Loading...</div>:error? <div>{error}</div>:<ul className="list-sneaker">
+return loading? <div>Loading...</div>:error? <div>{error}</div>:<div className="homePage">
+    <ul className="list-sneaker">
     {sneakers.map(sneaker =>(
     <li key={sneaker.id}>
         <div className="sneaker">
@@ -25,8 +26,15 @@ return loading? <div>Loading...</div>:error? <div>{error}</div>:<ul className="l
             <div className="sneaker-name">
                 <Link to={"/sneakers/" + sneaker.id}>{sneaker.name}</Link>
             </div>
-            <Link className="sneaker-brand" to={"/brands/"+sneaker.id}>{sneaker.Brand.name}</Link>
-            <div className="sneaker-price">$ {sneaker.price}</div>
+            <div>
+                <Link className="sneaker-brand" to={"/brands/"+sneaker.id}>
+                    <div>{sneaker.Brand.name}</div>
+                </Link>
+                <div className="sneaker-price">$ {sneaker.price}</div>
+
+            </div>
+
+
 
         </div>
     </li>
@@ -34,6 +42,7 @@ return loading? <div>Loading...</div>:error? <div>{error}</div>:<ul className="l
 
 
         </ul>
+    </div>
 
 }
 

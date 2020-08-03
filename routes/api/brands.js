@@ -23,15 +23,15 @@ router.get("/:id(\\d+)", asyncHandler(async(req, res)=>{
         brandId: brandId
     }})
     const brandSneakersIds = brandSneakers.map(sneaker => sneaker.id);
-    const orders = await db.Order.findAll({
-        where: {
-            sneakerId: {[Op.or]: brandSneakersIds}
-        },
-        include: [db.User, {
-            model: db.Sneaker,
-            include: db.Brand
-        }]
-    });
+    // const orders = await db.Order.findAll({
+    //     where: {
+    //         sneakerId: {[Op.or]: brandSneakersIds}
+    //     },
+    //     include: [db.User, {
+    //         model: db.Sneaker,
+    //         include: db.Brand
+    //     }]
+    // });
     const sneaker = await db.Sneaker.findAll({
         where: {
             brandId: brandId
@@ -42,7 +42,7 @@ router.get("/:id(\\d+)", asyncHandler(async(req, res)=>{
     });
     res.json({
         brand,
-        orders,
+        // orders,
         sneaker
     });
 }));
