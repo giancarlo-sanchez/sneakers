@@ -1,7 +1,7 @@
 import React from 'react';
 import {Component} from 'react'
 import './index.css';
-import { baseUrl } from '../src/config';
+import { baseUrl } from '../config';
 
 import { BrowserRouter, Route, Link, Redirect } from 'react-router-dom';
 import HomePage from './components/HomePage';
@@ -57,31 +57,31 @@ function App(){
                 <button className="sidebar-close-button"onClick={closeMenu}>close</button>
                 <ul>
                     <li>
-                       <Link to={`${baseUrl}/brands/1`}>Adidas</Link>
+                       <Link to="/brands/1">Adidas</Link>
                     </li>
                     <li>
-                       <Link to={`${baseUrl}/brands/2`}>Converse</Link>
+                       <Link to="/brands/2">Converse</Link>
                     </li>
                     <li>
-                       <Link to={`${baseUrl}/brands/3`}>New Balance</Link>
+                       <Link to="/brands/3">New Balance</Link>
                     </li>
                     <li>
-                       <Link to={`${baseUrl}/brands/4`}>Nike</Link>
+                       <Link to="/brands/4">Nike</Link>
                     </li>
                     <li>
-                       <Link to={`${baseUrl}/brands/5`}>Reebok</Link>
+                       <Link to="/brands/5">Reebok</Link>
                     </li>
                     <li>
-                       <Link to={`${baseUrl}/brands/6`}>Puma</Link>
+                       <Link to="/brands/6">Puma</Link>
                     </li>
                     <li>
-                       <Link to={`${baseUrl}/brands/7`}>Jordan</Link>
+                       <Link to="/brands/7">Jordan</Link>
                     </li>
                     <li>
-                       <Link to={`${baseUrl}/brands/8`}>Vans</Link>
+                       <Link to="/brands/8">Vans</Link>
                     </li>
                     <li>
-                       <Link to={`${baseUrl}/brands/9`}>ASICS</Link>
+                       <Link to="/brands/9">ASICS</Link>
                     </li>
                 </ul>
             </aside>
