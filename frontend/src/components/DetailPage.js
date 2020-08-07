@@ -25,7 +25,7 @@ function DetailPage (props){
     }
 
 return <div className="details-page">
-    <div className="back-to-home"><Link to="/">Back to Home page</Link></div>
+    <Link to="/"><div className="back-to-home">Back to Home page</div></Link>
     <div>{loading? <div>Loading...</div> :error? <div>{error}</div>:
         <div className="details">
             <div className="details-image">
@@ -47,7 +47,7 @@ return <div className="details-page">
                     </li>
                     <li>
                         Size:
-                        <select value={size} onChange={(e) =>{setSize(e.target.value)}}>
+                        <select className="drop-down-sizes"value={size} onChange={(e) =>{setSize(e.target.value)}}>
                             <option>8</option>
                             <option>8.5</option>
                             <option>9</option>

@@ -41,11 +41,11 @@ function App(){
                     <Link to="/" className="header__title">My Sneakers</Link>
                 </div>
                 <div className="header-links">
-                <Link to={`/cart`}>
-                  <button>Cart</button>
-                </Link>
+                  <Link to={`/cart`}>
+                     <button>Cart</button>
+                  </Link>
 
-                    {userInfo ? <Link to="/">Welcome {userInfo.user.firstName}</Link>: <Link to="/signin">Sign In</Link>}
+                     {userInfo ? <Link to="/">Welcome {userInfo.user.firstName}</Link>: <Link to="/signin">Sign In</Link>}
 
 
                 </div>
