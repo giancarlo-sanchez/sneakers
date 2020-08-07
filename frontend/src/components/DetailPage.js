@@ -24,7 +24,7 @@ function DetailPage (props){
         props.history.push(`/cart/${index}/?size=${size}`)
     }
 
-return <div>
+return <div className="details-page">
     <div className="back-to-home"><Link to="/">Back to Home page</Link></div>
     <div>{loading? <div>Loading...</div> :error? <div>{error}</div>:
         <div className="details">
@@ -32,14 +32,13 @@ return <div>
                 <img src={sneaker.imageSmall} alt="sneakerImage"></img>
             </div>
             <div className="details-info">
-                <ul>
-                    <li>
-                        <h3>{sneaker.name}</h3>
-                    </li>
-                    <li>
+                    <div>
+                        {sneaker.name}
+                    </div>
+                    <div className="price-tag">
                         Price:<b>${sneaker.price}</b>
-                    </li>
-                </ul>
+                    </div>
+
             </div>
             <div className="details-action">
                 <ul>
