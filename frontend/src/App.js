@@ -1,8 +1,5 @@
 import React from 'react';
-import {Component} from 'react'
 import './index.css';
-import { baseUrl } from './config';
-
 import { BrowserRouter, Route, Link, Redirect } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import DetailPage from './components/DetailPage';
@@ -16,6 +13,7 @@ import PlaceOrderPage from './components/PlaceOrderPage';
 import ConfirmationPage from './components/ConfirmationPage';
 import OrdersPage from './components/OrdersPage'
 import BrandDetailPage from './components/BrandDetailPage'
+import LandingPage from './components/LandingPage'
 
 function App(){
 
@@ -104,7 +102,8 @@ function App(){
                 <Route path="/sneakers/:id" exact={true} component={DetailPage}/>
                 <Route path="/brands/:id" exact={true} component={BrandDetailPage}/>
                 <Route path="/cart/:id?" exact={true} component={CartPage}/>
-                <Route path="/" exact={true} component={HomePage}/>
+                <Route path="/catalog" exact={true} component={HomePage}/>
+                <Route path="/" exact={true} component={LandingPage}/>
               </div>
 
           </main>

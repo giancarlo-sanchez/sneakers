@@ -31,7 +31,7 @@ function BrandDetailPage (props){
     //console.log(arrAux)
     console.log("this is brand name", sneaker);
 
-return <div><div className="back-to-home"><Link to="/">Back to Home page</Link></div><div>{loading? <div>Loading...</div>:error? <div>{error}</div>:<div><div className="brand-list-name">{brandNames(index)}</div><ul className="list-sneaker">
+return <div><div className="back-to-home"><Link to="/">Back to Home page</Link></div><div>{loading? <div>Loading...</div>:error? <div>{error}</div>:<div><ul className="list-sneaker">
 
 {sneaker.map(shoe =>(
 <li key={shoe.id}>
