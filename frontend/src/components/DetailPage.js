@@ -36,7 +36,7 @@ return <div className="details-page">
                         {sneaker.name}
                     </div>
                     <div className="price-tag">
-                        Price:<b>${sneaker.price}</b>
+                        Price: <b>$ {sneaker.price}</b>
                     </div>
 
             </div>

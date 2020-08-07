@@ -371,6 +371,7 @@ a:hover{
 .details-page{
     align-self: center;
     background-image: url(https://i.postimg.cc/JhZFLjrv/My-Post-1.png);
+    /* filter: blur(3px); */
     /* background-size: cover; */
     /* background-repeat: no-repeat; */
     background-position: center center;
@@ -398,8 +399,13 @@ a:hover{
     height: 100%;
     background-color: lightblue;
     border-radius: 3rem;
-    border: 0.5rem solid #0033cc;
+    border: 0.7rem solid #0033cc;
     margin: 2.5rem;
+    filter: drop-shadow(0.3rem 0.3rem 4rem #0033cc);
+}
+
+.details:hover{
+
 }
 
 .details-image{
@@ -425,8 +431,9 @@ a:hover{
 .details-info{
     flex: 1 1 60rem;
     font-family: 'Orbitron', sans-serif;
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: white;
+    font-weight: bold;
     padding: 2rem;
     background-color:  rgb(0, 102, 153);
     border-radius: 3rem;
@@ -436,8 +443,19 @@ a:hover{
     margin-left: 1rem;
 }
 
+.details-info b{
+    color: white;
+    font-size: 2rem;
+}
+
 .price-tag{
     font-size: 1.8rem;
+    color: black;
+    background-color: green;
+    border: 0.3rem solid #0033cc;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    margin: 1rem;
 }
 
 .details-action{

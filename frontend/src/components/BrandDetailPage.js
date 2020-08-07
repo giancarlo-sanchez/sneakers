@@ -44,7 +44,10 @@ return <div><div className="back-to-home"><Link to="/">Back to Home page</Link><
             <Link to={"/sneakers/" + shoe.id}>{shoe.name}</Link>
         </div>
         <Link className="sneaker-brand" to={"/brands/"+ shoe.id}>{shoe.Brand.name}</Link>
-        <div className="sneaker-price">$ {shoe.price}</div>
+        <Link to={"/sneakers/" + shoe.id}>
+            <div className="sneaker-price">$ {shoe.price}</div>
+        </Link>
+
 
     </div>
 </li>
