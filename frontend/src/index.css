@@ -137,10 +137,12 @@ a:hover{
 }
 
 .list-sneaker{
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 0;
 }
 
 .list-sneaker li{
@@ -148,8 +150,10 @@ a:hover{
     padding: 2rem;
     flex: 0 1 34rem;
     margin: 2rem;
+    margin-left: 0;
+    margin-right: 3rem;
     height: 40rem;
-    width: 28rem;
+    width: 26rem;
     border: 0.2rem solid black;
     border-radius: 15%;
     background-color: #fcfcfc;
@@ -161,6 +165,11 @@ a:hover{
     width: 24rem;
     max-height: 30rem;
 
+}
+
+.list-sneaker img{
+    display: flex;
+    justify-content:space-around;
 }
 
 .sneaker-name{
@@ -403,10 +412,6 @@ a:hover{
     border: 0.7rem solid #0033cc;
     margin: 2.5rem;
     filter: drop-shadow(0.3rem 0.3rem 4rem #0033cc);
-}
-
-.details:hover{
-
 }
 
 .details-image{
@@ -745,6 +750,82 @@ div.brand-list-name{
     max-width: 30rem;
     font-size: 5rem;
 }
+
+.brand-details-1{
+    margin-top: -1rem;
+    align-self: center;
+    background-image: url(https://i.postimg.cc/tgTtd19b/adidas-wallpaper.png);
+    background-position: center center;
+    opacity: 0.1rem;
+    /* height: 100rem; */
+
+}
+
+.brand-details-2{
+    margin-top: -1rem;
+    align-self: center;
+    background-image: url(https://i.postimg.cc/dtW0knt5/converse-wallpaper.png);
+    background-position: center center;
+    opacity: 0.1rem;
+}
+
+.brand-details-3{
+    margin-top: -1rem;
+    align-self: center;
+    background-image: url(https://i.postimg.cc/FR4YhRDc/nbwlppr.png);
+    /* background-position: center center; */
+    opacity: 0.1rem;
+}
+
+.brand-details-4{
+    margin-top: -1rem;
+    align-self: center;
+    background-image: url(https://i.postimg.cc/4yqnnktk/nikewallpaper.png);
+    /* background-position: center center; */
+    opacity: 0.1rem;
+}
+
+.brand-details-5{
+    margin-top: -1rem;
+    align-self: center;
+    background-image: url(https://i.postimg.cc/6Q3CqMrf/reebokwalpaper.png);
+    /* background-position: center center; */
+    opacity: 0.1rem;
+}
+
+.brand-details-6{
+    margin-top: -1rem;
+    align-self: center;
+    background-image: url(https://i.postimg.cc/QCD12dKY/pumawallpaper.png);
+    /* background-position: center center; */
+    opacity: 0.1rem;
+}
+
+.brand-details-7{
+    margin-top: -1rem;
+    align-self: center;
+    background-image: url(https://i.postimg.cc/kGDf5yyR/jordan-walpaper.png);
+    /* background-position: center center; */
+    opacity: 0.1rem;
+}
+
+.brand-details-8{
+    margin-top: -1rem;
+    align-self: center;
+    background-image: url(https://i.postimg.cc/Yq7qWyFH/vans-wallpaper.png);
+    /* background-position: center center; */
+    opacity: 0.1rem;
+}
+
+.brand-details-9{
+    margin-top: -1rem;
+    align-self: center;
+    background-image: url(https://i.postimg.cc/hPv9Qr7p/asicswallpaper.png);
+    /* background-position: center center; */
+    opacity: 0.1rem;
+}
+
+
 
 
 /*Styling landing page*/
