@@ -2,79 +2,79 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 
 function LandingPage(props){
-    return <div className="landing-page">
-        <div>
+    return <ul className="landing-page">
+        <li>
             <Link to={`/catalog`}>
                 <div>
                 <img src="https://i.postimg.cc/vmhKLJhH/background.png" alt="catalog"/>
                 </div>
 
             </Link>
-        </div>
-        <div>
+        </li>
+        <li>
             <Link to={`/brands/1`}>
             <div>
-                <img src="https://i.postimg.cc/K8m0Y97P/be2e9523f1c65739f648fcde45b6abec.jpg" alt="catalog"/>
+                <img src="https://i.postimg.cc/Pqmjb97H/adidas8.png" alt="catalog"/>
             </div>
             </Link>
-        </div>
-        <div>
+        </li>
+        <li>
             <Link to={`/brands/2`}>
             <div>
-                <img src="https://i.postimg.cc/Y024JWBw/converse2.png" alt="catalog"/>
+                <img src="https://i.postimg.cc/LX6zBKsg/converse5.jpg" alt="catalog"/>
             </div>
             </Link>
-        </div>
-        <div>
+        </li>
+        <li>
             <Link to={`/brands/3`}>
             <div>
-                <img src="https://i.postimg.cc/D0YzHpcq/newbalance.png" alt="catalog"/>
+                <img src="https://i.postimg.cc/ydvyw6GT/nb3.jpg" alt="catalog"/>
             </div>
             </Link>
-        </div>
-        <div>
+        </li>
+        <li>
             <Link to={`/brands/4`}>
             <div>
-                <img src="https://i.postimg.cc/Kj9d5d5y/nike-2.png" alt="catalog"/>
+                <img src="https://i.postimg.cc/ZRVXVSFG/nike-3.png" alt="catalog"/>
             </div>
             </Link>
-        </div>
-        <div>
+        </li>
+        <li>
             <Link to={`/brands/5`}>
             <div>
-                <img src="https://i.postimg.cc/zXsd1zvc/reebok.png" alt="catalog"/>
+                <img src="https://i.postimg.cc/Y2DJFtSg/reebook6.jpg" alt="catalog"/>
             </div>
             </Link>
-        </div>
-        <div>
+        </li>
+        <li>
             <Link to={`/brands/6`}>
             <div>
-                <img src="https://i.postimg.cc/nV65nYw2/ce24e13c2d5c73fd4b2fdd3c73e7dc18.jpg" alt="catalog"/>
+                <img src="https://i.postimg.cc/90w1Z5xt/puma-1.png" alt="catalog"/>
             </div>
             </Link>
-        </div>
-        <div>
+        </li>
+        <li>
             <Link to={`/brands/7`}>
             <div>
-                <img src="https://i.postimg.cc/s2v9BbMh/19fa1bbd922e59f930f9b4e38c9f7af6.jpg" alt="catalog"/>
+                <img src="https://i.postimg.cc/d0X51V6t/jordan-1.png" alt="catalog"/>
             </div>
             </Link>
-        </div>
-        <div>
+        </li>
+        <li>
             <Link to={`/brands/8`}>
             <div>
-                <img src="https://i.postimg.cc/mrsBhWXd/031bccc1ba2c2c50d6de6899ba293005.jpg" alt="catalog"/>
+                <img src="https://i.postimg.cc/8zXHKzqB/vans-1.png" alt="catalog"/>
             </div>
             </Link>
-        </div>
-        <div>
+        </li>
+        <li>
             <Link to={`/brands/9`}>
             <div>
-                <img src="https://i.postimg.cc/4x8jRkC7/30-78190.jpg" alt="catalog"/>
+                <img src="https://i.postimg.cc/VLYWztwW/asics-2.png" alt="catalog"/>
             </div>
             </Link>
-        </div>
-    </div>
+        </li>
+    </ul>
 }
 
 export default LandingPage
