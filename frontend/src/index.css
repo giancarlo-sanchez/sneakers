@@ -862,23 +862,52 @@ input{
 }
 
 /* Place Order */
+.placerorder-background{
+    background-image: url(https://i.postimg.cc/JhZFLjrv/My-Post-1.png);
+}
 
 .placeorder{
   display: flex;
   flex-grow: wrap;
   padding: 1rem;
   justify-content: space-between;
+  width: 36rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  color: black;
+
+    font-size: 1.6rem;
+    filter: drop-shadow(0.3rem 0.3rem 4rem white);
 }
 .placeorder-info{
-  flex: 3 1 60rem;
+  flex: 2 1 32rem;
 }
 .placeorder-action{
-  flex: 1 1 20rem;
+  /* display: block; */
+  /* justify-content: space-around; */
+  /* flex: 1 1 20rem; */
   border: .1rem #c0c0c0 solid;
   border-radius: .5rem;
   background-color: #fcfcfc;
   padding: 1rem;
+  width: 60rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  color: black;
+
 }
+
+.placeorder__center{
+    display: flex;
+    justify-content: space-around;
+}
+
+.placeorder-action_center{
+    display: flex;
+    justify-content: space-around;
+    /* width: 36rem; */
+}
+
 .placeorder-info > div{
   border: .1rem #c0c0c0 solid;
   border-radius: .5rem;
@@ -889,9 +918,14 @@ input{
 .placeorder-info > div:first-child{
   margin-top: 0;
 }
+
+.total-price{
+    font-size: 2.5rem;
+}
 .placeorder-action > ul {
   padding: 0;
   list-style-type: none;
+  /* display: flex; */
 }
 .placeorder-action > ul > li{
   display: flex;
@@ -899,12 +933,55 @@ input{
   margin-bottom: 1rem;
 }
 .placeorder-action > ul > li:last-child{
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: #c04000;
 }
 .placeorder-actions-payment > div {
   width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    .placeorder-info{
+        flex: 2 1 70rem;
+      }
+    .placeorder{
+    width: 60rem;
+    }
+    .placeorder-action{
+        width: 60%;
+    }
+}
+
+.cart-list-container_placeorder {
+    padding: 1rem;
+    list-style-type: none;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.cart-list-container_placeorder li img{
+    max-width: 10rem;
+    max-height: 10rem;
+
+
+}
+
+.cart-list-container_placeorder li{
+    border-top: 0.2rem solid black;
+}
+
+.cart-list-container_placeorder li:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top:none;
+
+}
+
+.placeorder h3{
+ color: blue;
+ font-weight: bold;
 }
 
 /*Confirmation Page*/
@@ -988,6 +1065,8 @@ div.brand-list-name{
     background-image: url(https://i.postimg.cc/kGDf5yyR/jordan-walpaper.png);
     /* background-position: center center; */
     opacity: 0.1rem;
+
+    height: 100%;
 }
 
 .brand-details-8{

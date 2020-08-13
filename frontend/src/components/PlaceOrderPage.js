@@ -59,8 +59,9 @@ function PlaceOrderPage(props) {
 
   }, [success]);
 
-  return <div>
+  return <div className="placerorder-background">
     <CheckoutSteps step1 step2 step3 step4 ></CheckoutSteps>
+    <div className="placeorder__center">
     <div className="placeorder">
       <div className="placeorder-info">
         <div>
@@ -79,7 +80,7 @@ function PlaceOrderPage(props) {
           </div>
         </div>
         <div>
-          <ul className="cart-list-container">
+          <ul className="cart-list-container_placeorder">
             <li>
               <h3>
                 Shopping Cart
@@ -121,37 +122,45 @@ function PlaceOrderPage(props) {
 
 
       </div>
-      <div className="placeorder-action">
+
+
+
+    </div>
+
+    </div>
+    <div className="placeorder-action_center">
+    <div className="placeorder-action">
         <ul>
-          <li>
-            <button className="button primary full-width" onClick={placeOrderHandler} >Place Order</button>
-          </li>
+
           <li>
             <h3>Order Summary</h3>
           </li>
           <li>
             <div>Items</div>
-            <div>${itemsPrice}</div>
+            <div className="cart-price">${itemsPrice}</div>
           </li>
           <li>
             <div>Shipping</div>
-            <div>${shippingPrice}</div>
+            <div className="cart-price">${shippingPrice}</div>
           </li>
           <li>
             <div>Tax</div>
-            <div>${taxPrice}</div>
+            <div className="cart-price">${taxPrice}</div>
           </li>
           <li>
             <div>Order Total</div>
-            <div>${totalPrice}</div>
+            <div className="cart-price total-price">${totalPrice}</div>
+          </li>
+          <li>
+            <button className="button primary full-width" onClick={placeOrderHandler} >Place Order</button>
           </li>
         </ul>
 
 
 
       </div>
-
     </div>
+
   </div>
 
 }
