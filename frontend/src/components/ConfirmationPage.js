@@ -26,15 +26,17 @@ function ConfirmationPage(props){
             </div>
 
         <div>
-          <ul className="cart-list-container">
-            <li>
-             <Link to={`/orders/users/${userId}`}>
+        <Link to={`/orders/users/${userId}`}>
+        <div className='confirmation-link'>
+
               See your shopping records
-              </Link>
 
-            </li>
 
-          </ul>
+        </div>
+        </Link>
+
+
+
         </div>
 
 
