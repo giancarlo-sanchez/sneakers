@@ -36,49 +36,49 @@ function CartPage(props){
 
     return <div className="cart">
         <div className="back-to-home"><Link to="/">Back to Home page</Link></div>
+
+        <div className="cart-component">
+
         <div className="cart-list">
-            <ul className="cart-list-container">
-                <li className="cart-list__title">
-                    <div>
-                    <div>
-                        Shopping Cart
+
+<ul className="cart-list-container">
+        <div className="cart-action">
+            <div className="cart-action__shopping-cart">
+            Shopping Cart
+            </div>
+
+            </div>
+    {
+        cartItems.length === 0? <div className="empty-cart">The Cart is Empty</div>:cartItems.map(item =><li><div className="cart-image">
+
+            <img src={item.image} alt="item-in-cart" />
+            </div>
+            <div >
+                <div className="cart-name">
+                   <div>
+                       <Link to={`/sneakers/${item.sneakerId}`}>{item.name}</Link>
                     </div>
-                        </div>
+                </div>
+                <div>
+                    <div className="cart-name__size">
+                    Size:{item.size}
+                    </div>
 
 
-                </li>
-                {
-                    cartItems.length === 0? <div>The Cart is Empty</div>:cartItems.map(item =><li><div className="cart-image">
+                    <button className="cart-remove" onClick={()=>removeItemFromCartHandler(item.sneakerId)}>X</button>
+                </div>
+                <div className="cart-price">price ${item.price}</div>
+            </div>
 
-                        <img src={item.image} alt="item-in-cart" />
-                        </div>
-                        <div >
-                            <div className="cart-name">
-                               <div>
-                                   <Link to={`/sneakers/${item.sneakerId}`}>{item.name}</Link>
-                                </div>
-                            </div>
-                            <div>
-                                Size:
-                                <select value={item.size} onChange={(e) => dispatch(addCart(item.product, e.target.value))}>
-                                    <option value="8">8</option>
-                                    <option value="8.5">8.5</option>
-                                    <option value="9">9</option>
-                                    <option value="9.5">9.5</option>
-                                    <option value="10">10</option>
-                                    <option value="10.5">10.5</option>
-                                </select>
-                                <button className="cart-remove" onClick={()=>removeItemFromCartHandler(item.sneakerId)}>X</button>
-                            </div>
-                            <div className="cart-price">price ${item.price}</div>
-                        </div>
+    </li>)
+    }
 
-                </li>)
-                }
+</ul>
 
-            </ul>
+</div>
 
         </div>
+
         <div className="cart-action-root">
         <div className="cart-action">
                 <div className="cart-action_subtotal">

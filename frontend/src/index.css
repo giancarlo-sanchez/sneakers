@@ -40,11 +40,16 @@ body{
 
 }
 
+.brand{
+    width: 60rem;
+}
+
 .brand a{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: white;
     text-decoration: none;
+
 }
 
 .brand a:hover{
@@ -61,7 +66,7 @@ body{
 }
 
 .header-links a{
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: white;
     text-decoration: none;
@@ -557,7 +562,8 @@ a:hover{
     margin-top: -1rem;
     background-image: url(https://i.postimg.cc/1X1xWMD1/cart.png);
     background-size: cover;
-    height: 80rem;
+    height: 120rem;
+    width: 100%;
 
 
 
@@ -576,11 +582,25 @@ a:hover{
     background-color: lightgreen;
     padding: 2rem;
     border: .3rem #175c1c solid;
-    filter: drop-shadow(0.3rem 0.3rem 4rem #175c1c);
+    filter: drop-shadow(0.2rem 0.2rem 2rem #175c1c);
     font-family: 'Orbitron', sans-serif;
     border-radius: 1rem;
     margin: 2rem;
-    width: 60rem;
+    /* width: 60rem; */
+}
+
+.cart-action__shopping-cart{
+    color: black;
+    font-size: 2.8rem;
+    font-weight: bolder;
+
+}
+
+.empty-cart{
+    background-color: white;
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+    font-weight: bold;
 }
 
 .cart-action-root{
@@ -608,18 +628,39 @@ a:hover{
 }
 
 .cart-list__title{
-    /* background-color: gray; */
-    font-size: 2.3rem;
+    background-color: #1384e8;
+    color: white;
+    font-weight: bold;
+    border:0.3rem solid blue;
+    padding: 2rem;
+    width: 48rem;
+    font-size: 2.5rem;
     display: flex;
     justify-content: space-around;
 }
 
+.cart-list__title-div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart-remove{
+    color: white;
+    background-color:#e05a5e ;
+}
+
+.cart-remove:hover{
+    background-color:#db0d13 ;
+}
+
+.cart-component div{
+    display: flex;
+    justify-content: space-around;}
+
 .cart-list-container {
     padding: 1rem;
     list-style-type: none;
-    /* display: flex; */
-    /* justify-content: space-aroun; */
-    width: 60rem;
+    width: 50rem;
 }
 .cart-list-container li:first-child{
     display: flex;
@@ -638,6 +679,11 @@ a:hover{
     padding: 1rem;
     background-color: white;
     color: black;
+    font-size: 1.3rem;
+}
+
+.cart-name__size{
+    color: blue;
 }
 
 .cart-list-container a{
