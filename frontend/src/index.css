@@ -949,6 +949,7 @@ div.brand-list-name{
     margin-bottom: 0;
     background-image: url(https://i.postimg.cc/50LM3Gk1/main-background.jpg);
     margin: 0;
+    margin-left: -3.5rem;
 }
 
 .landing-page li{
