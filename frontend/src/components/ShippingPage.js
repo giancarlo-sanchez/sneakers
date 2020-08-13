@@ -18,9 +18,9 @@ function ShippingPage(props) {
     dispatch(saveShipping({ address, city, postalCode, country }));
     props.history.push('payment');
   }
-  return <div>
+  return <div className="shipping-page">
     <CheckoutSteps step1 step2 ></CheckoutSteps>
-    <div className="form">
+    <div className="form__shipping-page">
       <form onSubmit={submitHandler} >
         <ul className="form-container">
           <li>

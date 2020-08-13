@@ -15,9 +15,9 @@ function PaymentPage(props) {
     dispatch(savePayment({ paymentMethod }));
     props.history.push('placeorder');
   }
-  return <div>
+  return <div className="payment-page">
     <CheckoutSteps step1 step2 step3 ></CheckoutSteps>
-    <div className="form">
+    <div className="form__payment-page">
       <form onSubmit={submitHandler} >
         <ul className="form-container">
           <li>
@@ -25,7 +25,7 @@ function PaymentPage(props) {
           </li>
 
           <li>
-            <div>
+            <div className="paypal-option">
               <input type="radio" name="paymentMethod" id="paymentMethod" value="paypal"
                 onChange={(e) => setPaymentMethod(e.target.value)}>
               </input>

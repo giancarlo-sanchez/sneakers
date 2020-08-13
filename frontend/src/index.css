@@ -45,7 +45,7 @@ body{
 }
 
 .brand a{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: white;
     text-decoration: none;
@@ -738,6 +738,11 @@ a:hover{
     border-radius: 0.5rem;
 }
 
+.button.secondary:hover{
+    background-color: lightgreen;
+    text-decoration: none;
+}
+
 .text-center{
     text-align: center;
 }
@@ -747,8 +752,17 @@ a:hover{
     justify-content: center;
     align-items: center;
     height: 100%;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color:black;
+    background-image:url(https://i.postimg.cc/dVstkn1D/fondo1.jpg)
 }
 
+.primary:hover{
+    background-color: black;
+    color: white;
+    /* font-size: 1.8rem; */
+}
 .form-container{
     display: flex;
     flex-direction: column;
@@ -757,6 +771,8 @@ a:hover{
     border: .1rem lightgray solid;
     border-radius: 0.5rem;
     list-style-type: none;
+    background-color: white;
+    margin-top: 1rem;
 }
 
 .form-container li{
@@ -777,8 +793,11 @@ input{
 .checkout-steps{
     display: flex;
     justify-content: space-between;
-    width: 40rem;
+    /* width: 40rem; */
     margin: 1rem auto;
+    font-family: 'Orbitron', sans-serif;
+    background-color: white;
+    /* padding: 2rem; */
 
   }
   .checkout-steps > div{
@@ -786,11 +805,61 @@ input{
     color: #c0c0c0;
     flex: 1 1;
     padding-top: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
   }
   .checkout-steps > div.active{
     border-top: .3rem #f08000 solid;
     color: #f08000;
   }
+
+  .shipping-page{
+    background-image: url(https://i.postimg.cc/nLjh1rtD/fondo2.png);
+    margin:0;
+  }
+
+.form__shipping-page{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color:black;
+
+}
+
+.payment-page{
+    background-image: url(https://i.postimg.cc/pXhdMkTF/fondo4.png);
+    margin:0;
+    height: 55rem;
+  }
+
+  .paypal-option{
+      padding:2rem;
+      display: flex;
+      flex-direction: row;
+  }
+
+  .paypal-option>input{
+    margin-right: 1rem;
+    cursor: pointer;
+   /* justify-content: space-between; */
+  }
+
+.form__payment-page{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color:black;
+    filter: drop-shadow(0.3rem 0.3rem 4rem white);
+
+}
 
 /* Place Order */
 
