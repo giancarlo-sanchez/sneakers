@@ -157,12 +157,17 @@ a:hover{
     border: 0.2rem solid black;
     border-radius: 15%;
     background-color: #fcfcfc;
+    text-decoration: nones;
+}
+
+.list-sneaker a:hover{
+    text-decoration: none;
 }
 
 
 
 .sneaker-image{
-    width: 24rem;
+    width: 22rem;
     max-height: 30rem;
 
 }
@@ -545,27 +550,76 @@ a:hover{
 }
 
 .cart{
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
-    margin: 1rem;
+    /* margin: 2rem; */
     align-items: flex-start;
+    margin-top: -1rem;
+    background-image: url(https://i.postimg.cc/1X1xWMD1/cart.png);
+    background-size: cover;
+    height: 80rem;
+
+
+
 }
 
 .cart-list{
-    flex: 3 1 60rem;
+    flex: 3 1 50rem;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: teal; */
 }
 
 .cart-action{
-    flex: 3 1 20rem;
-    background-color: lightgrey;
+    /* flex: 3 1 20rem; */
+    background-color: lightgreen;
     padding: 2rem;
-    border: .3rem black solid;
+    border: .3rem #175c1c solid;
+    filter: drop-shadow(0.3rem 0.3rem 4rem #175c1c);
+    font-family: 'Orbitron', sans-serif;
     border-radius: 1rem;
+    margin: 2rem;
+    width: 60rem;
+}
+
+.cart-action-root{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart-action div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart-action_subtotal{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+.cart-action_button{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.cart-list__title{
+    /* background-color: gray; */
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 .cart-list-container {
     padding: 1rem;
     list-style-type: none;
+    /* display: flex; */
+    /* justify-content: space-aroun; */
+    width: 60rem;
 }
 .cart-list-container li:first-child{
     display: flex;
@@ -579,10 +633,19 @@ a:hover{
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 1rem;
-    border-bottom: .1rem black solid;
+    /* border-bottom: .1rem black solid; */
     border-top: .1rem black solid;
     padding: 1rem;
+    background-color: white;
+    color: black;
 }
+
+.cart-list-container a{
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
 .cart-list-container li:first-child{
     display: flex;
     justify-content: space-between;
@@ -610,6 +673,8 @@ a:hover{
     flex: 1 1;
     font-weight: bold;
     text-align: right;
+    color: darkgreen;
+
 }
 
 
@@ -821,7 +886,7 @@ div.brand-list-name{
 .brand-details-9{
     margin-top: -1rem;
     align-self: center;
-    background-image: url(https://i.postimg.cc/Yq7qWyFH/vans-wallpaper.png);
+    background-image: url(https://i.postimg.cc/hPv9Qr7p/asicswallpaper.png);
     /* background-position: center center; */
     opacity: 0.1rem;
 }

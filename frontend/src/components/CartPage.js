@@ -38,10 +38,13 @@ function CartPage(props){
         <div className="back-to-home"><Link to="/">Back to Home page</Link></div>
         <div className="cart-list">
             <ul className="cart-list-container">
-                <li>
-                    <h3>
+                <li className="cart-list__title">
+                    <div>
+                    <div>
                         Shopping Cart
-                    </h3>
+                    </div>
+                        </div>
+
 
                 </li>
                 {
@@ -76,14 +79,22 @@ function CartPage(props){
             </ul>
 
         </div>
+        <div className="cart-action-root">
         <div className="cart-action">
-                <h3>
-                    SubTotal ${cartItems.reduce ((a,c) => a + c.price, 0)}
-                </h3>
-                <button onClick={checkOutHandler} className="button-add-cart" disabled={cartItems.length === 0}>
-                    Checkout
-                </button>
+                <div className="cart-action_subtotal">
+                    <div>SubTotal</div>
+                    <div>${cartItems.reduce ((a,c) => a + c.price, 0)}</div>
+                </div>
+                <div className="cart-action_button">
+                    <button onClick={checkOutHandler} className="button-add-cart" disabled={cartItems.length === 0}>
+                        Checkout
+                    </button>
+                </div>
+
         </div>
+
+        </div>
+
     </div>
 
 }

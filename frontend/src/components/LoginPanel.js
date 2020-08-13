@@ -32,6 +32,12 @@ function LoginPanel (props){
 
       }
 
+      const handleDemo = (e) => {
+        e.preventDefault();
+        dispatch(signin('user@one.io', 'abc123'));
+
+      }
+
       return <div className="form">
       <form onSubmit={submitHandler} >
         <ul className="form-container">
@@ -56,6 +62,9 @@ function LoginPanel (props){
           </li>
           <li>
             <button type="submit" className="button primary">Sign in</button>
+          </li>
+          <li>
+            <button onClick={handleDemo} className="button primary">Demo user</button>
           </li>
           <li>
             New to My-Sneakers?

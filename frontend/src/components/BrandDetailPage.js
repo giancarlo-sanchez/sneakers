@@ -34,6 +34,7 @@ function BrandDetailPage (props){
 return <div className={`brand-details-${index}`}><div className="back-to-home"><Link to="/">Back to Home page</Link></div><div>{loading? <div>Loading...</div>:error? <div>{error}</div>:<div><ul className="list-sneaker">
 
 {sneaker.map(shoe =>(
+<Link to={`/sneakers/${shoe.id}`}>
 <li key={shoe.id}>
     <div className="sneaker">
         <Link to={`/sneakers/${shoe.id}`}>
@@ -46,13 +47,14 @@ return <div className={`brand-details-${index}`}><div className="back-to-home"><
         <Link className="sneaker-brand" to={"/brands/"+shoe.brandId}>
                     <div>{shoe.Brand.name}</div>
                 </Link>
-        <Link to={"/sneakers/" + shoe.brandId}>
+        <Link to={`/sneakers/${shoe.id}`}>
             <div className="sneaker-price">$ {shoe.price}</div>
         </Link>
 
 
     </div>
 </li>
+</Link>
     ))}
 
 

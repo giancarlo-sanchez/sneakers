@@ -17,6 +17,9 @@ function HomePage (props){
 return loading? <div>Loading...</div>:error? <div>{error}</div>:<div className="homePage">
     <ul className="list-sneaker">
     {sneakers.map(sneaker =>(
+     <Link to={`/sneakers/${sneaker.id}`}>
+
+
     <li key={sneaker.id}>
         <div className="sneaker">
             <Link to={`/sneakers/${sneaker.id}`}>
@@ -41,6 +44,7 @@ return loading? <div>Loading...</div>:error? <div>{error}</div>:<div className="
 
         </div>
     </li>
+    </Link>
         ))}
 
 
