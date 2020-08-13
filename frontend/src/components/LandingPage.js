@@ -70,7 +70,7 @@ function LandingPage(props){
         <li>
             <Link to={`/brands/9`}>
             <div>
-                <img src="https://i.postimg.cc/hPv9Qr7p/asicswallpaper.png" alt="catalog"/>
+                <img src="https://i.postimg.cc/vm0ngphq/asics-wllppr2.png" alt="catalog"/>
             </div>
             </Link>
         </li>
