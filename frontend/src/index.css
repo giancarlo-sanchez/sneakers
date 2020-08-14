@@ -1166,3 +1166,48 @@ div.brand-list-name{
     border: 0.3rem solid white;
     transition: 0.5s;
 }
+
+
+/*Orders Page*/
+.table{
+    border: 0.3rem solid #0033cc;
+    background-color: lightblue;
+    padding:3rem;
+}
+
+
+.content{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: black;
+
+}
+
+.table thead{
+    font-family: 'Roboto', sans-serif;
+    color: blue;
+    font-weight: bolder;
+    border:0.3rem solid #0033cc;
+    background-color:#0033cc;
+    color: white;
+}
+
+.order-header{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+}
+
+.table th{
+    align-self: center;
+    align-items: center;
+    /* border-left:0.3rem solid #0033cc */
+    /* text-align: center; */
+}
+
+.table tbody{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
