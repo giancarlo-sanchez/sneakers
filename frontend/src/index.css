@@ -1211,3 +1211,16 @@ div.brand-list-name{
     font-weight: bolder;
     font-size: 1.3rem;
 }
+
+/* SneakerOrdered*/
+
+.list-players img{
+    width: 10rem;
+    padding-top: 0.5rem;
+}
+
+.list-players{
+    background-color: white;
+    width: 30rem;
+    border-radius: 1.5rem;
+}

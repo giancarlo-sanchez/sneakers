@@ -11,23 +11,36 @@ export default function SneakerOrder(props){
     console.log("this is sneakerDetails",sneakerList,"this is props:",props)
     const {sneakers, loading, error} = sneakerList;
     console.log("this is sneakers",sneakers)
+    // console.log("this is sneakers",sneakers[0])
+
     const dispatch = useDispatch();
     let arrIds = props.props.split(',')
     console.log(typeof arrIds[0]);
     let idAux =[];
+    let arrNew =[];
     arrIds.map(ids =>{
         idAux.push(parseInt(ids))
     })
+    console.log('this is the new props',idAux);
     console.log(typeof idAux[0]);
+    // if(sneakers){
+    //     arrNew.push(sneakers[item])
+    // }
+    // sneakers?arrNew.push(sneakers[item]):<div>{'no data'}</div>
+    if(sneakers){
+    idAux.map(sneakerObj=>{
+        arrNew.push(sneakers[sneakerObj])
+    })};
+
+    console.log('this is arrNew',arrNew)
 
     useEffect(() => {
             dispatch(listSneakers())
     }, [])
 
-return loading? <div>Loading...</div>:error? <div>{error}</div>:<Carousel className="list-players">{idAux.map(item =>(
-    <div key={item}>
-        {/* <div>{sneakers[0][item-1]}</div> */}
-        {/* <PlayerPage playerInfo={player.player_id}/> */}
+return loading? <div>Loading...</div>:error? <div>{error}</div>:<Carousel className="list-players">{arrNew.map(item =>(
+    <div>
+        {item?<div><img src={item.imageSmall} /><div>$ {item.price}</div></div>:'nada'}
     </div>
 ))}
 </Carousel>
