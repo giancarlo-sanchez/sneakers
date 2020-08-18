@@ -1,0 +1,43 @@
+// import React, {useEffect, useState} from 'react';
+// import {useSelector, useDispatch} from 'react-redux'
+// import {Link} from 'react-router-dom'
+// import {listPlayersAction}  from '../actions/listPlayerActions'
+// import Carousel from 'react-material-ui-carousel'
+// import { addPlayer } from '../actions/favoritePlayerActions';
+// import PlayerPage from './PlayerPage';
+
+// function SneakerCarrousel (stringId){
+//     // console.log("This are the props:",stringId.stringId,stringId.seasonId,stringId.team)
+//     const dispatch = useDispatch();
+
+//     useEffect(() => {
+//             dispatch(listPlayersAction(stringId.stringId, stringId.seasonId))
+//     }, [])
+
+
+//     const listPlayersInTeam = useSelector(state => state.listPlayers);
+//     console.log("this is The store slice:",listPlayersInTeam)
+
+//     const {listPlayers, loading,error} = listPlayersInTeam
+
+//     console.log("this is squad",listPlayers)
+
+//     const userSignin = useSelector(state =>state.userSignin);
+//     const { userInfo, token } = userSignin;
+
+//     // const addFavoritePlayer = () => {
+//     //     dispatch(addPlayer(userInfo.user.id, player.id));
+//     //   }
+
+// // debugger
+// return loading? <div>Loading...</div>:error? <div>{error}</div>:
+// <Carousel className="list-players">{listPlayers.map(player =>(
+//         <div key={player.player_id}>
+//             <PlayerPage playerInfo={player.player_id}/>
+//         </div>
+// ))}
+// </Carousel>
+
+// }
+
+// export default SneakerCarrousel;

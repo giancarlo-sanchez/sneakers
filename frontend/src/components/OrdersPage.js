@@ -9,6 +9,9 @@ function OrdersPage(props) {
   const myOrderList = useSelector(state => state.myOrderList);
   console.log("this is order list",myOrderList)
   const { loading, orders, error } = myOrderList;
+  // const sneakerList = useSelector(state => state.sneakerList);
+  // console.log("this is sneakerDetails",sneakerList)
+  // const {sneakers} = sneakerList;
 
 
 
