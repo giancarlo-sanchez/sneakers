@@ -29,7 +29,7 @@ export default function SneakerOrder(props){
     // sneakers?arrNew.push(sneakers[item]):<div>{'no data'}</div>
     if(sneakers){
     idAux.map(sneakerObj=>{
-        arrNew.push(sneakers[sneakerObj])
+        arrNew.push(sneakers[sneakerObj-1])
     })};
 
     console.log('this is arrNew',arrNew)
